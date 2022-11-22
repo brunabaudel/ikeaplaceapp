@@ -8,14 +8,13 @@
 import SwiftUI
 
 struct CategoryDetailsView: View {
-    
-    var gridItems: [GridItemModel]
+    var listItemModel: ListItemModel
     var imageSize: CGFloat
         
     var body: some View {
         ScrollView {
             VStack(alignment: .leading) {
-                Image("chairs")
+                Image(listItemModel.image)
                     .resizable()
                     .frame(width: imageSize, height: imageSize)
                     .aspectRatio(contentMode: .fit)
@@ -28,13 +27,13 @@ struct CategoryDetailsView: View {
                     .padding(.top, 8)
                     .padding(.bottom, 1)
                 
-                Text("Chairs")
+                Text(listItemModel.name.capitalized)
                     .font(.title)
                     .fontWeight(.light)
                     .padding(.horizontal)
                     .padding(.bottom, 60)
                 
-                CategoryGridView(items: gridItems, imageSize: imageSize)
+                CategoryGridView(items: listItemModel.items ?? [], imageSize: imageSize)
                     .padding(.horizontal, 16)
             }
         }

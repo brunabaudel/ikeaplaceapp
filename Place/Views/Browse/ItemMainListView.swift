@@ -20,7 +20,7 @@ struct ItemMainListView: View {
                     .frame(width: imageSize, height: imageSize)
                     .aspectRatio(contentMode: .fit)
                     
-                Text(item.name)
+                Text(item.name.capitalized)
                     .font(.title)
                     .foregroundColor(.white)
                     .fontWeight(.light)

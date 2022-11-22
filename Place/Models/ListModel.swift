@@ -41,28 +41,27 @@ struct GridItemModel: Identifiable {
 
 let categoryListModel: ListModel =
 ListModel(type: .categories, title: "Selected furniture",
-              items: [ListItemModel(name: "Chairs", image: "chairs", items: [
-                    GridItemModel(image: "chairs", title: "utter", description: "children's stool", price: 7.99, serialNumber: "9834557", details: "Indoor/Outdoor/White"),
-                    GridItemModel(image: "chairs", title: "utter", description: "children's stool", price: 7, serialNumber: "9834557", details: "Indoor/Outdoor/White"),
-                    GridItemModel(image: "chairs", title: "utter", description: "children's stool", price: 7.99, serialNumber: "9834557", details: "Indoor/Outdoor/White"),
-                    GridItemModel(image: "chairs", title: "utter", description: "children's stool", price: 10, serialNumber: "9834557", details: "Indoor/Outdoor/White"),
-                    GridItemModel(image: "chairs", title: "utter", description: "children's stool", price: 7.99, serialNumber: "9834557", details: "Indoor/Outdoor/White"),
-                    GridItemModel(image: "chairs", title: "utter", description: "children's stool", price: 14, serialNumber: "9834557", details: "Indoor/Outdoor/White"),
-                    GridItemModel(image: "chairs", title: "utter", description: "children's stool", price: 7.99, serialNumber: "9834557", details: "Indoor/Outdoor/White"),
-                    GridItemModel(image: "chairs", title: "utter", description: "children's stool", price: 7.99, serialNumber: "9834557", details: "Indoor/Outdoor/White"),
-                  ]),
-                     ListItemModel(name: "Chairs1", image: "chairs", items: [
-                        GridItemModel(image: "chairs", title: "utter", description: "children's stool", price: 7.99, serialNumber: "9834557", details: "Indoor/Outdoor/White"),
-                        GridItemModel(image: "chairs", title: "utter", description: "children's stool", price: 7, serialNumber: "9834557", details: "Indoor/Outdoor/White"),
-                     ]),
-                     ListItemModel(name: "Chairs2", image: "chairs", items: [
-                        GridItemModel(image: "chairs", title: "utter", description: "children's stool", price: 7.99, serialNumber: "9834557", details: "Indoor/Outdoor/White"),
-                      ]),
-                     ListItemModel(name: "Chairs3", image: "chairs", items: [
-                        GridItemModel(image: "chairs", title: "utter", description: "children's stool", price: 7.99, serialNumber: "9834557", details: "Indoor/Outdoor/White"),
-                      ])
-                     ]
-            )
+              items: [ListItemModel(name: "chairs", image: "chairs", items: categoriesItems),
+                      ListItemModel(name: "armchairs", image: "armchairs-chaise-longues", items: categoriesItems),
+                      ListItemModel(name: "bar", image: "bar-furniture", items: categoriesItems),
+                      ListItemModel(name: "beds", image: "beds", items: categoriesItems),
+                      ListItemModel(name: "bookcases shelving", image: "bookcases-shelving-units", items: categoriesItems),
+                      ListItemModel(name: "cabinets cupboards", image: "cabinets-cupboards", items: categoriesItems),
+                      ListItemModel(name: "cafe", image: "cafe-furniture", items: categoriesItems),
+                      ListItemModel(name: "drawers", image: "chests-of-drawers-drawer-units", items: categoriesItems),
+                      ListItemModel(name: "childrens", image: "childrens-furniture", items: categoriesItems),
+                      ListItemModel(name: "furniture sets", image: "furniture-sets", items: categoriesItems),
+                      ListItemModel(name: "gaming", image: "gaming-furniture", items: categoriesItems),
+                      ListItemModel(name: "nursery", image: "nursery-furniture", items: categoriesItems),
+                      ListItemModel(name: "outdoor", image: "outdoor-furniture", items: categoriesItems),
+                      ListItemModel(name: "room dividers", image: "room-dividers", items: categoriesItems),
+                      ListItemModel(name: "sideboards tables", image: "sideboards-buffets-console-tables", items: categoriesItems),
+                      ListItemModel(name: "sofas", image: "sofas", items: categoriesItems),
+                      ListItemModel(name: "tables desks", image: "tables-desks", items: categoriesItems),
+                      ListItemModel(name: "trolleys", image: "trolleys", items: categoriesItems),
+                      ListItemModel(name: "tv media", image: "tv-media-furniture", items: categoriesItems),
+                      ListItemModel(name: "wardrobes", image: "wardrobes", items: categoriesItems),
+                     ])
 
 let roomSetsListModel: ListModel =
 ListModel(type: .roomSets, title: "Experiences to try",
@@ -77,3 +76,14 @@ let suggestions: [GridItemModel] = [
     GridItemModel(image: "chairs", title: "utter", description: "children's stool", price: 7.99, serialNumber: "9834557", details: "Indoor/Outdoor/White"),
     GridItemModel(image: "chairs", title: "utter", description: "children's stool", price: 7.99, serialNumber: "9834557", details: "Indoor/Outdoor/White"),
 ]
+
+let categoriesItems: [GridItemModel] = [
+    GridItemModel(image: "armchairs-chaise-longues", title: "utter", description: "children's stool", price: 7.99, serialNumber: "9834557", details: "Indoor/Outdoor/White"),
+    GridItemModel(image: "chairs", title: "utter", description: "children's stool", price: 7, serialNumber: "9834557", details: "Indoor/Outdoor/White"),
+    GridItemModel(image: "chairs", title: "utter", description: "children's stool", price: 7.99, serialNumber: "9834557", details: "Indoor/Outdoor/White"),
+    GridItemModel(image: "chairs", title: "utter", description: "children's stool", price: 10, serialNumber: "9834557", details: "Indoor/Outdoor/White"),
+    GridItemModel(image: "chairs", title: "utter", description: "children's stool", price: 7.99, serialNumber: "9834557", details: "Indoor/Outdoor/White"),
+    GridItemModel(image: "chairs", title: "utter", description: "children's stool", price: 14, serialNumber: "9834557", details: "Indoor/Outdoor/White"),
+    GridItemModel(image: "chairs", title: "utter", description: "children's stool", price: 7.99, serialNumber: "9834557", details: "Indoor/Outdoor/White"),
+    GridItemModel(image: "chairs", title: "utter", description: "children's stool", price: 7.99, serialNumber: "9834557", details: "Indoor/Outdoor/White"),
+  ]

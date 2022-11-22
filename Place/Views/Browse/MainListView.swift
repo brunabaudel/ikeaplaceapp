@@ -27,9 +27,9 @@ struct MainListView: View {
                     VStack {
                         ForEach(listModel.items) { item in
                             NavigationLink(destination: listModel.type == .categories ?
-                                           CategoryDetailsView(gridItems: item.items ?? [], imageSize: geo.size.width)
+                                           CategoryDetailsView(listItemModel: item, imageSize: geo.size.width)
                                             :
-                                            CategoryDetailsView(gridItems: item.items ?? [], imageSize: geo.size.width)) {
+                                            CategoryDetailsView(listItemModel: item, imageSize: geo.size.width)) {
                                 ItemMainListView(item: item, imageSize: geo.size.width - 42)
                             }
                         }

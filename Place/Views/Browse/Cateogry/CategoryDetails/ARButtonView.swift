@@ -9,11 +9,13 @@ import SwiftUI
 
 struct ARButtonView: View {
     
-    var action: () -> ()
+    @State private var isPresented = false
+    var item: GridItemModel
     
     var body: some View {
+
         Button(action: {
-            action()
+            isPresented.toggle()
         }) {
             ZStack {
                 Circle()
@@ -24,6 +26,8 @@ struct ARButtonView: View {
                     .foregroundColor(.white)
             }
             .shadow(color: .gray, radius: 0.6, x: 1, y: 1)
+        }
+        .fullScreenCover(isPresented: $isPresented) {
         }
     }
 }
