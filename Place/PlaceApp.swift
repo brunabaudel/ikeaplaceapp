@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct PlaceApp: App {
+    
     var body: some Scene {
         WindowGroup {
-            MainView()
+            MainTabView()
+                .ignoresSafeArea()
         }
     }
 }

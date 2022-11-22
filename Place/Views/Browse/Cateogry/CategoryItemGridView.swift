@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ItemGridDetailsView: View {
+struct CategoryItemGridView: View {
     
     var item: GridItemModel
     var imageSize: CGFloat
@@ -40,9 +40,3 @@ struct ItemGridDetailsView: View {
         }
     }
 }
-
-//struct ItemGridDetailsView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        ItemGridDetailsView()
-//    }
-//}

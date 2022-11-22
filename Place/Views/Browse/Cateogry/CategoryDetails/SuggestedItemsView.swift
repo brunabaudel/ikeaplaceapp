@@ -18,7 +18,7 @@ struct SuggestedItemsView: View {
                 .fontWeight(.light)
                 .padding()
             
-            GridDetailsView(items: suggestions, imageSize: imageSize)
+            CategoryGridView(items: suggestions, imageSize: imageSize)
                 .padding(.horizontal, 16)
         }
     }

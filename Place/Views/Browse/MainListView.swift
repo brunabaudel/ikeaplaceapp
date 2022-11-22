@@ -10,6 +10,7 @@ import SwiftUI
 struct MainListView: View {
     
     var listModel: ListModel
+    @State private var active: Bool = false
     
     var body: some View {
         GeometryReader { geo in
@@ -25,7 +26,10 @@ struct MainListView: View {
                     
                     VStack {
                         ForEach(listModel.items) { item in
-                            NavigationLink(destination: ItemDetailsView(gridItems: item.items ?? [], imageSize: geo.size.width)) {
+                            NavigationLink(destination: listModel.type == .categories ?
+                                           CategoryDetailsView(gridItems: item.items ?? [], imageSize: geo.size.width)
+                                            :
+                                            CategoryDetailsView(gridItems: item.items ?? [], imageSize: geo.size.width)) {
                                 ItemMainListView(item: item, imageSize: geo.size.width - 42)
                             }
                         }
@@ -34,11 +38,5 @@ struct MainListView: View {
                 }
             }
         }
-    }
-}
-
-struct MainListView_Previews: PreviewProvider {
-    static var previews: some View {
-        MainListView(listModel: categoryListModel)
     }
 }

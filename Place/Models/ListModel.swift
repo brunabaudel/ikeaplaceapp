@@ -7,7 +7,13 @@
 
 import SwiftUI
 
+enum BrowseSection: String, CaseIterable {
+    case categories = "Categories"
+    case roomSets = "Room Sets"
+}
+
 struct ListModel {
+    var type: BrowseSection
     var title: String
     var items: [ListItemModel]
 }
@@ -34,7 +40,7 @@ struct GridItemModel: Identifiable {
 }
 
 let categoryListModel: ListModel =
-    ListModel(title: "Selected furniture",
+ListModel(type: .categories, title: "Selected furniture",
               items: [ListItemModel(name: "Chairs", image: "chairs", items: [
                     GridItemModel(image: "chairs", title: "utter", description: "children's stool", price: 7.99, serialNumber: "9834557", details: "Indoor/Outdoor/White"),
                     GridItemModel(image: "chairs", title: "utter", description: "children's stool", price: 7, serialNumber: "9834557", details: "Indoor/Outdoor/White"),
@@ -59,11 +65,11 @@ let categoryListModel: ListModel =
             )
 
 let roomSetsListModel: ListModel =
-    ListModel(title: "Experiences to try",
-              items: [ListItemModel(name: "A space to relax", image: "chairs"),
-                     ListItemModel(name: "A space to relax", image: "chairs"),
-                     ListItemModel(name: "A space to relax", image: "chairs"),
-                     ListItemModel(name: "A space to relax", image: "chairs")
+ListModel(type: .roomSets, title: "Experiences to try",
+              items: [ListItemModel(name: "A space to relax", image: "a-space-ro-relax"),
+                     ListItemModel(name: "A space to relax", image: "a-space-ro-relax"),
+                     ListItemModel(name: "A space to relax", image: "a-space-ro-relax"),
+                     ListItemModel(name: "A space to relax", image: "a-space-ro-relax")
                      ]
             )
 

@@ -29,9 +29,3 @@ struct ItemMainListView: View {
         }
     }
 }
-
-struct ItemMainListView_Previews: PreviewProvider {
-    static var previews: some View {
-        ItemMainListView(item: ListItemModel(name: "Chairs", image: "chairs"), imageSize: 350.0)
-    }
-}
