@@ -41,6 +41,7 @@
 		F8FBEA8D292E3CAC00BBA628 /* ARViewController+CoachingOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8FBEA8C292E3CAC00BBA628 /* ARViewController+CoachingOverlay.swift */; };
 		F8FBEA90292E3D4D00BBA628 /* FocusSquare.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8FBEA8F292E3D4D00BBA628 /* FocusSquare.swift */; };
 		F8FBEA92292E3D6100BBA628 /* FocusSquareSegment.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8FBEA91292E3D6100BBA628 /* FocusSquareSegment.swift */; };
+		F8FBEA96292E4C8600BBA628 /* RoomSetsDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8FBEA95292E4C8600BBA628 /* RoomSetsDetailsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -79,6 +80,7 @@
 		F8FBEA8C292E3CAC00BBA628 /* ARViewController+CoachingOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ARViewController+CoachingOverlay.swift"; sourceTree = "<group>"; };
 		F8FBEA8F292E3D4D00BBA628 /* FocusSquare.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusSquare.swift; sourceTree = "<group>"; };
 		F8FBEA91292E3D6100BBA628 /* FocusSquareSegment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusSquareSegment.swift; sourceTree = "<group>"; };
+		F8FBEA95292E4C8600BBA628 /* RoomSetsDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomSetsDetailsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -232,6 +234,7 @@
 		F8FBEA7E292BD40E00BBA628 /* RoomSets */ = {
 			isa = PBXGroup;
 			children = (
+				F8FBEA95292E4C8600BBA628 /* RoomSetsDetailsView.swift */,
 			);
 			path = RoomSets;
 			sourceTree = "<group>";
@@ -341,6 +344,7 @@
 				F8FBEA87292CC77B00BBA628 /* ProfileView.swift in Sources */,
 				F8FBEA57292A7F0D00BBA628 /* ModalView.swift in Sources */,
 				F8FBEA84292BD74F00BBA628 /* BrowseView+Utilities.swift in Sources */,
+				F8FBEA96292E4C8600BBA628 /* RoomSetsDetailsView.swift in Sources */,
 				F8FBEA60292A8B8700BBA628 /* VirtualObjectInteraction.swift in Sources */,
 				F8FBEA69292A8D0200BBA628 /* ARViewController+ARSCNViewDelegate.swift in Sources */,
 				F8FBEA90292E3D4D00BBA628 /* FocusSquare.swift in Sources */,

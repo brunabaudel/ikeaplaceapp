@@ -33,8 +33,6 @@ struct BrowseView: View {
                         Text(option.rawValue)
                             .fontWeight(.thin)
                             .tag(option)
-                            .accessibilityElement()
-                            .accessibilityLabel(Text(option == .categories ? "Categories tab" : "Room Sets tab"))
                     }
                     Spacer()
                 }
@@ -57,9 +55,9 @@ struct BrowseView: View {
     private func displayCorrectView(_ selectedOption: BrowseSection) -> some View {
         switch selectedOption {
         case .categories:
-            return MainListView(listModel: categoryListModel)
+            return MainListView(listModel: categoryList)
         case .roomSets:
-            return MainListView(listModel: roomSetsListModel)
+            return MainListView(listModel: roomSetsList)
         }
     }
 }

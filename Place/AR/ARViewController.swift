@@ -148,18 +148,18 @@ class ARViewController: UIViewController {
         alertController.addAction(restartAction)
         present(alertController, animated: true, completion: nil)
     }
-
 }
 
-
 struct UICamViewController: UIViewControllerRepresentable {
-    var object: GridItemModel
+    var object: GridItemModel?
     
     func updateUIViewController(_ uiViewController: UIViewControllerType, context: Context) {}
     
     func makeUIViewController(context: Context) -> some UIViewController {
         let vc = ARViewController()
-        vc.object = object
+        if let object {
+            vc.object = object
+        }
         return vc
     }
 }

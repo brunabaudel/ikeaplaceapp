@@ -10,7 +10,7 @@ import SwiftUI
 struct ARButtonView: View {
     
     @State private var isPresented = false
-    var item: GridItemModel
+    var item: GridItemModel?
     
     var body: some View {
 

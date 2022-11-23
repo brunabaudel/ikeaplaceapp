@@ -25,20 +25,28 @@ struct MainListView: View {
                         .padding(.horizontal, 22)
                     
                     VStack {
-                        ForEach(listModel.items) { item in
-                            NavigationLink(destination: listModel.type == .categories ?
-                                           CategoryDetailsView(listItemModel: item, imageSize: geo.size.width)
-                                            :
-                                            CategoryDetailsView(listItemModel: item, imageSize: geo.size.width)) {
-                                ItemMainListView(item: item, imageSize: geo.size.width - 42)
+                            ForEach(Array(listModel.items.enumerated()), id: \.element) { index, element in
+                                NavigationLink(destination: destination(element: element, imageSize: geo.size.width)) {
+                                    ItemMainListView(item: element, imageSize: geo.size.width - 42)
+                                        .id(index)
+                                }
                             }
+                            .padding(8)
                         }
-                        .padding(8)
                     }
                 }
             }
         }
         .accessibilityElement()
         .accessibilityLabel(Text("You can browse the categories here"))
+    }
+    
+    func destination(element: ListItemModel, imageSize: CGFloat) -> AnyView {
+        switch listModel.type {
+        case .categories:
+            return AnyView(CategoryDetailsView(listItemModel: element, imageSize: imageSize))
+        case .roomSets:
+            return AnyView(RoomSetsDetailsView(listItemModel: element, imageSize: imageSize))
+        }
     }
 }

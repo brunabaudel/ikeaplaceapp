@@ -18,11 +18,19 @@ struct ListModel {
     var items: [ListItemModel]
 }
 
-struct ListItemModel: Identifiable {
+struct ListItemModel: Identifiable, Hashable {
     internal let id = UUID()
     var name: String
     var image: String
     var items: [GridItemModel]?
+    
+    static func == (lhs: ListItemModel, rhs: ListItemModel) -> Bool {
+        return lhs.id == rhs.id
+    }
+    
+    public func hash(into hasher: inout Hasher) {
+        return hasher.combine(id)
+    }
 }
 
 struct GridItemModel: Identifiable {
@@ -40,7 +48,7 @@ struct GridItemModel: Identifiable {
     }
 }
 
-let categoryListModel: ListModel =
+let categoryList: ListModel =
 ListModel(type: .categories, title: "Selected furniture",
               items: [ListItemModel(name: "chairs", image: "chairs", items: categoriesItems),
                       ListItemModel(name: "armchairs", image: "armchairs-chaise-longues", items: categoriesItems),
@@ -64,14 +72,13 @@ ListModel(type: .categories, title: "Selected furniture",
                       ListItemModel(name: "wardrobes", image: "wardrobes", items: categoriesItems),
                      ])
 
-let roomSetsListModel: ListModel =
+let roomSetsList: ListModel =
 ListModel(type: .roomSets, title: "Experiences to try",
-              items: [ListItemModel(name: "A space to relax", image: "a-space-ro-relax"),
-                     ListItemModel(name: "A space to relax", image: "a-space-ro-relax"),
-                     ListItemModel(name: "A space to relax", image: "a-space-ro-relax"),
-                     ListItemModel(name: "A space to relax", image: "a-space-ro-relax")
-                     ]
-            )
+          items: [ListItemModel(name: "A space to relax", image: "a-space-ro-relax", items: []),
+                  ListItemModel(name: "A space to relax", image: "a-space-ro-relax", items: []),
+                  ListItemModel(name: "A space to relax", image: "a-space-ro-relax", items: []),
+                  ListItemModel(name: "A space to relax", image: "a-space-ro-relax", items: [])
+                 ])
 
 let suggestions: [GridItemModel] = [
     GridItemModel(image: "chairs", modelName: "chair", title: "utter", description: "children's stool", price: 7.99, serialNumber: "9834557", details: "Indoor/Outdoor/White"),
