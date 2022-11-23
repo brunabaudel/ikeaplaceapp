@@ -20,7 +20,15 @@ struct ProfileView: View {
                     .font(.title2)
                     .fontWeight(.light)
                     .frame(maxWidth: .infinity, alignment: .leading)
-                    .padding()
+                    .padding(.horizontal, 16)
+                
+                Text("Your wishlist is empty")
+                    .font(.subheadline)
+                    .foregroundColor(.gray)
+                    .fontWeight(.light)
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .padding(.top, 2)
+                    .padding(.horizontal, 16)
                 Spacer()
             }
             .navigationTitle("Profile")
