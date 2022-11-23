@@ -38,5 +38,7 @@ struct MainListView: View {
                 }
             }
         }
+        .accessibilityElement()
+        .accessibilityLabel(Text("You can browse the categories here"))
     }
 }

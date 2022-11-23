@@ -8,35 +8,77 @@
 
 /* Begin PBXBuildFile section */
 		F8FBEA062927A0CA00BBA628 /* PlaceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8FBEA052927A0CA00BBA628 /* PlaceApp.swift */; };
-		F8FBEA082927A0CA00BBA628 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8FBEA072927A0CA00BBA628 /* MainView.swift */; };
+		F8FBEA082927A0CA00BBA628 /* BrowseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8FBEA072927A0CA00BBA628 /* BrowseView.swift */; };
 		F8FBEA0A2927A0CB00BBA628 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8FBEA092927A0CB00BBA628 /* Assets.xcassets */; };
 		F8FBEA0D2927A0CB00BBA628 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8FBEA0C2927A0CB00BBA628 /* Preview Assets.xcassets */; };
-		F8FBEA3C292928F000BBA628 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8FBEA3B292928F000BBA628 /* ViewController.swift */; };
+		F8FBEA3C292928F000BBA628 /* ARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8FBEA3B292928F000BBA628 /* ARViewController.swift */; };
 		F8FBEA3F2929631300BBA628 /* ItemMainListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8FBEA3E2929631300BBA628 /* ItemMainListView.swift */; };
 		F8FBEA41292965BD00BBA628 /* ListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8FBEA40292965BD00BBA628 /* ListModel.swift */; };
 		F8FBEA442929793200BBA628 /* MainListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8FBEA432929793200BBA628 /* MainListView.swift */; };
-		F8FBEA46292A3C6700BBA628 /* ItemDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8FBEA45292A3C6700BBA628 /* ItemDetailsView.swift */; };
-		F8FBEA48292A3CD700BBA628 /* ItemGridDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8FBEA47292A3CD700BBA628 /* ItemGridDetailsView.swift */; };
-		F8FBEA4A292A3D0B00BBA628 /* GridDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8FBEA49292A3D0B00BBA628 /* GridDetailsView.swift */; };
-		F8FBEA4F292A4CA600BBA628 /* ItemDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8FBEA4E292A4CA600BBA628 /* ItemDetails.swift */; };
+		F8FBEA46292A3C6700BBA628 /* CategoryDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8FBEA45292A3C6700BBA628 /* CategoryDetailsView.swift */; };
+		F8FBEA48292A3CD700BBA628 /* CategoryItemGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8FBEA47292A3CD700BBA628 /* CategoryItemGridView.swift */; };
+		F8FBEA4A292A3D0B00BBA628 /* CategoryGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8FBEA49292A3D0B00BBA628 /* CategoryGridView.swift */; };
+		F8FBEA4F292A4CA600BBA628 /* CategoryItemDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8FBEA4E292A4CA600BBA628 /* CategoryItemDetailsView.swift */; };
 		F8FBEA51292A56C800BBA628 /* SuggestedItemsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8FBEA50292A56C800BBA628 /* SuggestedItemsView.swift */; };
+		F8FBEA57292A7F0D00BBA628 /* ModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8FBEA56292A7F0D00BBA628 /* ModalView.swift */; };
+		F8FBEA5B292A87D300BBA628 /* VirtualObjectARView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8FBEA5A292A87D300BBA628 /* VirtualObjectARView.swift */; };
+		F8FBEA5E292A880200BBA628 /* VirtualObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8FBEA5D292A880200BBA628 /* VirtualObject.swift */; };
+		F8FBEA60292A8B8700BBA628 /* VirtualObjectInteraction.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8FBEA5F292A8B8700BBA628 /* VirtualObjectInteraction.swift */; };
+		F8FBEA62292A8C4B00BBA628 /* ThresholdPanGesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8FBEA61292A8C4B00BBA628 /* ThresholdPanGesture.swift */; };
+		F8FBEA65292A8C8000BBA628 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8FBEA64292A8C8000BBA628 /* Utilities.swift */; };
+		F8FBEA67292A8CCB00BBA628 /* ARViewController+ObjectSelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8FBEA66292A8CCB00BBA628 /* ARViewController+ObjectSelection.swift */; };
+		F8FBEA69292A8D0200BBA628 /* ARViewController+ARSCNViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8FBEA68292A8D0200BBA628 /* ARViewController+ARSCNViewDelegate.swift */; };
+		F8FBEA6B292A8D5C00BBA628 /* ARViewController+Actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8FBEA6A292A8D5C00BBA628 /* ARViewController+Actions.swift */; };
+		F8FBEA6D292A8D8E00BBA628 /* VirtualObjectLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8FBEA6C292A8D8E00BBA628 /* VirtualObjectLoader.swift */; };
+		F8FBEA73292A8E6600BBA628 /* Models.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = F8FBEA72292A8E6600BBA628 /* Models.scnassets */; };
+		F8FBEA75292AA5FA00BBA628 /* ARViewController+Views.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8FBEA74292AA5FA00BBA628 /* ARViewController+Views.swift */; };
+		F8FBEA7D292BD0AB00BBA628 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8FBEA7C292BD0AB00BBA628 /* MainTabView.swift */; };
+		F8FBEA80292BD53200BBA628 /* ARButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8FBEA7F292BD53200BBA628 /* ARButtonView.swift */; };
+		F8FBEA82292BD5F700BBA628 /* ItemDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8FBEA81292BD5F700BBA628 /* ItemDetailsView.swift */; };
+		F8FBEA84292BD74F00BBA628 /* BrowseView+Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8FBEA83292BD74F00BBA628 /* BrowseView+Utilities.swift */; };
+		F8FBEA87292CC77B00BBA628 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8FBEA86292CC77B00BBA628 /* ProfileView.swift */; };
+		F8FBEA89292CCFAA00BBA628 /* ARView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8FBEA88292CCFAA00BBA628 /* ARView.swift */; };
+		F8FBEA8D292E3CAC00BBA628 /* ARViewController+CoachingOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8FBEA8C292E3CAC00BBA628 /* ARViewController+CoachingOverlay.swift */; };
+		F8FBEA90292E3D4D00BBA628 /* FocusSquare.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8FBEA8F292E3D4D00BBA628 /* FocusSquare.swift */; };
+		F8FBEA92292E3D6100BBA628 /* FocusSquareSegment.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8FBEA91292E3D6100BBA628 /* FocusSquareSegment.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F8FBEA022927A0CA00BBA628 /* Place.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Place.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8FBEA052927A0CA00BBA628 /* PlaceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceApp.swift; sourceTree = "<group>"; };
-		F8FBEA072927A0CA00BBA628 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		F8FBEA072927A0CA00BBA628 /* BrowseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowseView.swift; sourceTree = "<group>"; };
 		F8FBEA092927A0CB00BBA628 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F8FBEA0C2927A0CB00BBA628 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		F8FBEA3B292928F000BBA628 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F8FBEA3B292928F000BBA628 /* ARViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewController.swift; sourceTree = "<group>"; };
 		F8FBEA3E2929631300BBA628 /* ItemMainListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemMainListView.swift; sourceTree = "<group>"; };
 		F8FBEA40292965BD00BBA628 /* ListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListModel.swift; sourceTree = "<group>"; };
 		F8FBEA432929793200BBA628 /* MainListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainListView.swift; sourceTree = "<group>"; };
-		F8FBEA45292A3C6700BBA628 /* ItemDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailsView.swift; sourceTree = "<group>"; };
-		F8FBEA47292A3CD700BBA628 /* ItemGridDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemGridDetailsView.swift; sourceTree = "<group>"; };
-		F8FBEA49292A3D0B00BBA628 /* GridDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridDetailsView.swift; sourceTree = "<group>"; };
-		F8FBEA4E292A4CA600BBA628 /* ItemDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetails.swift; sourceTree = "<group>"; };
+		F8FBEA45292A3C6700BBA628 /* CategoryDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryDetailsView.swift; sourceTree = "<group>"; };
+		F8FBEA47292A3CD700BBA628 /* CategoryItemGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryItemGridView.swift; sourceTree = "<group>"; };
+		F8FBEA49292A3D0B00BBA628 /* CategoryGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryGridView.swift; sourceTree = "<group>"; };
+		F8FBEA4E292A4CA600BBA628 /* CategoryItemDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryItemDetailsView.swift; sourceTree = "<group>"; };
 		F8FBEA50292A56C800BBA628 /* SuggestedItemsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestedItemsView.swift; sourceTree = "<group>"; };
+		F8FBEA56292A7F0D00BBA628 /* ModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalView.swift; sourceTree = "<group>"; };
+		F8FBEA5A292A87D300BBA628 /* VirtualObjectARView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VirtualObjectARView.swift; sourceTree = "<group>"; };
+		F8FBEA5D292A880200BBA628 /* VirtualObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VirtualObject.swift; sourceTree = "<group>"; };
+		F8FBEA5F292A8B8700BBA628 /* VirtualObjectInteraction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VirtualObjectInteraction.swift; sourceTree = "<group>"; };
+		F8FBEA61292A8C4B00BBA628 /* ThresholdPanGesture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThresholdPanGesture.swift; sourceTree = "<group>"; };
+		F8FBEA64292A8C8000BBA628 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		F8FBEA66292A8CCB00BBA628 /* ARViewController+ObjectSelection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ARViewController+ObjectSelection.swift"; sourceTree = "<group>"; };
+		F8FBEA68292A8D0200BBA628 /* ARViewController+ARSCNViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ARViewController+ARSCNViewDelegate.swift"; sourceTree = "<group>"; };
+		F8FBEA6A292A8D5C00BBA628 /* ARViewController+Actions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ARViewController+Actions.swift"; sourceTree = "<group>"; };
+		F8FBEA6C292A8D8E00BBA628 /* VirtualObjectLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VirtualObjectLoader.swift; sourceTree = "<group>"; };
+		F8FBEA72292A8E6600BBA628 /* Models.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = Models.scnassets; sourceTree = "<group>"; };
+		F8FBEA74292AA5FA00BBA628 /* ARViewController+Views.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ARViewController+Views.swift"; sourceTree = "<group>"; };
+		F8FBEA7C292BD0AB00BBA628 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		F8FBEA7F292BD53200BBA628 /* ARButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARButtonView.swift; sourceTree = "<group>"; };
+		F8FBEA81292BD5F700BBA628 /* ItemDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailsView.swift; sourceTree = "<group>"; };
+		F8FBEA83292BD74F00BBA628 /* BrowseView+Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BrowseView+Utilities.swift"; sourceTree = "<group>"; };
+		F8FBEA86292CC77B00BBA628 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		F8FBEA88292CCFAA00BBA628 /* ARView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARView.swift; sourceTree = "<group>"; };
+		F8FBEA8C292E3CAC00BBA628 /* ARViewController+CoachingOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ARViewController+CoachingOverlay.swift"; sourceTree = "<group>"; };
+		F8FBEA8F292E3D4D00BBA628 /* FocusSquare.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusSquare.swift; sourceTree = "<group>"; };
+		F8FBEA91292E3D6100BBA628 /* FocusSquareSegment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusSquareSegment.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,8 +114,8 @@
 				F8FBEA052927A0CA00BBA628 /* PlaceApp.swift */,
 				F8FBEA42292965C000BBA628 /* Models */,
 				F8FBEA3D2929630200BBA628 /* Views */,
-				F8FBEA3B292928F000BBA628 /* ViewController.swift */,
-				F8FBEA092927A0CB00BBA628 /* Assets.xcassets */,
+				F8FBEA54292A7CBB00BBA628 /* AR */,
+				F8FBEA71292A8E3900BBA628 /* Resources */,
 				F8FBEA0B2927A0CB00BBA628 /* Preview Content */,
 			);
 			path = Place;
@@ -90,10 +132,9 @@
 		F8FBEA3D2929630200BBA628 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				F8FBEA072927A0CA00BBA628 /* MainView.swift */,
-				F8FBEA4B292A3D8300BBA628 /* Main */,
-				F8FBEA4C292A3D8E00BBA628 /* Details */,
-				F8FBEA4D292A4C8000BBA628 /* ItemDetails */,
+				F8FBEA7C292BD0AB00BBA628 /* MainTabView.swift */,
+				F8FBEA4B292A3D8300BBA628 /* Browse */,
+				F8FBEA85292CC75A00BBA628 /* Profile */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -106,32 +147,110 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		F8FBEA4B292A3D8300BBA628 /* Main */ = {
+		F8FBEA4B292A3D8300BBA628 /* Browse */ = {
 			isa = PBXGroup;
 			children = (
+				F8FBEA072927A0CA00BBA628 /* BrowseView.swift */,
+				F8FBEA83292BD74F00BBA628 /* BrowseView+Utilities.swift */,
 				F8FBEA432929793200BBA628 /* MainListView.swift */,
 				F8FBEA3E2929631300BBA628 /* ItemMainListView.swift */,
+				F8FBEA4C292A3D8E00BBA628 /* Cateogry */,
+				F8FBEA7E292BD40E00BBA628 /* RoomSets */,
 			);
-			path = Main;
+			path = Browse;
 			sourceTree = "<group>";
 		};
-		F8FBEA4C292A3D8E00BBA628 /* Details */ = {
+		F8FBEA4C292A3D8E00BBA628 /* Cateogry */ = {
 			isa = PBXGroup;
 			children = (
-				F8FBEA45292A3C6700BBA628 /* ItemDetailsView.swift */,
-				F8FBEA49292A3D0B00BBA628 /* GridDetailsView.swift */,
-				F8FBEA47292A3CD700BBA628 /* ItemGridDetailsView.swift */,
+				F8FBEA45292A3C6700BBA628 /* CategoryDetailsView.swift */,
+				F8FBEA49292A3D0B00BBA628 /* CategoryGridView.swift */,
+				F8FBEA47292A3CD700BBA628 /* CategoryItemGridView.swift */,
+				F8FBEA4D292A4C8000BBA628 /* CategoryDetails */,
 			);
-			path = Details;
+			path = Cateogry;
 			sourceTree = "<group>";
 		};
-		F8FBEA4D292A4C8000BBA628 /* ItemDetails */ = {
+		F8FBEA4D292A4C8000BBA628 /* CategoryDetails */ = {
 			isa = PBXGroup;
 			children = (
-				F8FBEA4E292A4CA600BBA628 /* ItemDetails.swift */,
+				F8FBEA4E292A4CA600BBA628 /* CategoryItemDetailsView.swift */,
+				F8FBEA81292BD5F700BBA628 /* ItemDetailsView.swift */,
+				F8FBEA7F292BD53200BBA628 /* ARButtonView.swift */,
 				F8FBEA50292A56C800BBA628 /* SuggestedItemsView.swift */,
 			);
-			path = ItemDetails;
+			path = CategoryDetails;
+			sourceTree = "<group>";
+		};
+		F8FBEA54292A7CBB00BBA628 /* AR */ = {
+			isa = PBXGroup;
+			children = (
+				F8FBEA88292CCFAA00BBA628 /* ARView.swift */,
+				F8FBEA3B292928F000BBA628 /* ARViewController.swift */,
+				F8FBEA74292AA5FA00BBA628 /* ARViewController+Views.swift */,
+				F8FBEA68292A8D0200BBA628 /* ARViewController+ARSCNViewDelegate.swift */,
+				F8FBEA6A292A8D5C00BBA628 /* ARViewController+Actions.swift */,
+				F8FBEA66292A8CCB00BBA628 /* ARViewController+ObjectSelection.swift */,
+				F8FBEA8C292E3CAC00BBA628 /* ARViewController+CoachingOverlay.swift */,
+				F8FBEA5F292A8B8700BBA628 /* VirtualObjectInteraction.swift */,
+				F8FBEA61292A8C4B00BBA628 /* ThresholdPanGesture.swift */,
+				F8FBEA5A292A87D300BBA628 /* VirtualObjectARView.swift */,
+				F8FBEA5C292A87E100BBA628 /* VirtualObject */,
+				F8FBEA8E292E3D2C00BBA628 /* FocusSquare */,
+				F8FBEA63292A8C7500BBA628 /* Utilities */,
+			);
+			path = AR;
+			sourceTree = "<group>";
+		};
+		F8FBEA5C292A87E100BBA628 /* VirtualObject */ = {
+			isa = PBXGroup;
+			children = (
+				F8FBEA5D292A880200BBA628 /* VirtualObject.swift */,
+				F8FBEA6C292A8D8E00BBA628 /* VirtualObjectLoader.swift */,
+			);
+			path = VirtualObject;
+			sourceTree = "<group>";
+		};
+		F8FBEA63292A8C7500BBA628 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				F8FBEA56292A7F0D00BBA628 /* ModalView.swift */,
+				F8FBEA64292A8C8000BBA628 /* Utilities.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		F8FBEA71292A8E3900BBA628 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F8FBEA092927A0CB00BBA628 /* Assets.xcassets */,
+				F8FBEA72292A8E6600BBA628 /* Models.scnassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F8FBEA7E292BD40E00BBA628 /* RoomSets */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = RoomSets;
+			sourceTree = "<group>";
+		};
+		F8FBEA85292CC75A00BBA628 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				F8FBEA86292CC77B00BBA628 /* ProfileView.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		F8FBEA8E292E3D2C00BBA628 /* FocusSquare */ = {
+			isa = PBXGroup;
+			children = (
+				F8FBEA8F292E3D4D00BBA628 /* FocusSquare.swift */,
+				F8FBEA91292E3D6100BBA628 /* FocusSquareSegment.swift */,
+			);
+			path = FocusSquare;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -192,6 +311,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8FBEA73292A8E6600BBA628 /* Models.scnassets in Resources */,
 				F8FBEA0D2927A0CB00BBA628 /* Preview Assets.xcassets in Resources */,
 				F8FBEA0A2927A0CB00BBA628 /* Assets.xcassets in Resources */,
 			);
@@ -204,17 +324,37 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F8FBEA4A292A3D0B00BBA628 /* GridDetailsView.swift in Sources */,
-				F8FBEA48292A3CD700BBA628 /* ItemGridDetailsView.swift in Sources */,
-				F8FBEA3C292928F000BBA628 /* ViewController.swift in Sources */,
-				F8FBEA082927A0CA00BBA628 /* MainView.swift in Sources */,
+				F8FBEA67292A8CCB00BBA628 /* ARViewController+ObjectSelection.swift in Sources */,
+				F8FBEA4A292A3D0B00BBA628 /* CategoryGridView.swift in Sources */,
+				F8FBEA75292AA5FA00BBA628 /* ARViewController+Views.swift in Sources */,
+				F8FBEA82292BD5F700BBA628 /* ItemDetailsView.swift in Sources */,
+				F8FBEA6D292A8D8E00BBA628 /* VirtualObjectLoader.swift in Sources */,
+				F8FBEA48292A3CD700BBA628 /* CategoryItemGridView.swift in Sources */,
+				F8FBEA5B292A87D300BBA628 /* VirtualObjectARView.swift in Sources */,
+				F8FBEA3C292928F000BBA628 /* ARViewController.swift in Sources */,
+				F8FBEA082927A0CA00BBA628 /* BrowseView.swift in Sources */,
+				F8FBEA8D292E3CAC00BBA628 /* ARViewController+CoachingOverlay.swift in Sources */,
+				F8FBEA89292CCFAA00BBA628 /* ARView.swift in Sources */,
+				F8FBEA6B292A8D5C00BBA628 /* ARViewController+Actions.swift in Sources */,
 				F8FBEA442929793200BBA628 /* MainListView.swift in Sources */,
 				F8FBEA062927A0CA00BBA628 /* PlaceApp.swift in Sources */,
-				F8FBEA46292A3C6700BBA628 /* ItemDetailsView.swift in Sources */,
-				F8FBEA4F292A4CA600BBA628 /* ItemDetails.swift in Sources */,
+				F8FBEA87292CC77B00BBA628 /* ProfileView.swift in Sources */,
+				F8FBEA57292A7F0D00BBA628 /* ModalView.swift in Sources */,
+				F8FBEA84292BD74F00BBA628 /* BrowseView+Utilities.swift in Sources */,
+				F8FBEA60292A8B8700BBA628 /* VirtualObjectInteraction.swift in Sources */,
+				F8FBEA69292A8D0200BBA628 /* ARViewController+ARSCNViewDelegate.swift in Sources */,
+				F8FBEA90292E3D4D00BBA628 /* FocusSquare.swift in Sources */,
+				F8FBEA80292BD53200BBA628 /* ARButtonView.swift in Sources */,
+				F8FBEA46292A3C6700BBA628 /* CategoryDetailsView.swift in Sources */,
+				F8FBEA92292E3D6100BBA628 /* FocusSquareSegment.swift in Sources */,
+				F8FBEA65292A8C8000BBA628 /* Utilities.swift in Sources */,
+				F8FBEA4F292A4CA600BBA628 /* CategoryItemDetailsView.swift in Sources */,
 				F8FBEA41292965BD00BBA628 /* ListModel.swift in Sources */,
+				F8FBEA7D292BD0AB00BBA628 /* MainTabView.swift in Sources */,
 				F8FBEA3F2929631300BBA628 /* ItemMainListView.swift in Sources */,
+				F8FBEA5E292A880200BBA628 /* VirtualObject.swift in Sources */,
 				F8FBEA51292A56C800BBA628 /* SuggestedItemsView.swift in Sources */,
+				F8FBEA62292A8C4B00BBA628 /* ThresholdPanGesture.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,9 +486,13 @@
 				DEVELOPMENT_TEAM = 3F274MB2RL;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "The camera is used for augmenting reality.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = "armv7 arkit";
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -358,9 +502,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = appledeveloperacademy.Place;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -375,9 +522,13 @@
 				DEVELOPMENT_TEAM = 3F274MB2RL;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "The camera is used for augmenting reality.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = "armv7 arkit";
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -387,9 +538,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = appledeveloperacademy.Place;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

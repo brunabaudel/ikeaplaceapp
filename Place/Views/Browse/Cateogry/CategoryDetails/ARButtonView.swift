@@ -28,6 +28,7 @@ struct ARButtonView: View {
             .shadow(color: .gray, radius: 0.6, x: 1, y: 1)
         }
         .fullScreenCover(isPresented: $isPresented) {
+            ARView(item: item)
         }
     }
 }

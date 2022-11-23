@@ -16,18 +16,24 @@ struct MainTabView: View {
                 .tabItem {
                     Image(systemName: "square.grid.2x2")
                 }
+                .accessibilityElement()
+                .accessibilityLabel(Text("Browse tab"))
 
-//            UICamViewController()
-//                .ignoresSafeArea()
-//                .tabItem {
-//                    Image(systemName: "viewfinder")
-//                }
+            ARView()
+                .tabItem {
+                    Image(systemName: "viewfinder")
+                }
+                .accessibilityElement()
+                .accessibilityLabel(Text("Scan tab"))
             
             ProfileView()
                 .tabItem {
                     Image(systemName: "person")
                 }
-                
+                .accessibilityElement()
+                .accessibilityLabel(Text("Profile tab"))
         }
+        .accessibilityElement()
+        .accessibilityLabel(Text(""))
     }
 }

@@ -25,12 +25,16 @@ struct BrowseView: View {
                     .frame(maxWidth: .infinity, alignment: .leading)
                     .padding()
                     .padding(.top, 28)
+                    .accessibilityElement()
+                    .accessibilityLabel(Text("browse"))
                 
                 Picker("", selection: $segmentationSelection) {
                     ForEach(BrowseSection.allCases, id: \.self) { option in
                         Text(option.rawValue)
                             .fontWeight(.thin)
                             .tag(option)
+                            .accessibilityElement()
+                            .accessibilityLabel(Text(option == .categories ? "Categories tab" : "Room Sets tab"))
                     }
                     Spacer()
                 }
@@ -47,6 +51,7 @@ struct BrowseView: View {
         }
         .tint(.white)
         .edgesIgnoringSafeArea(.all)
+        .accessibilityElement()
     }
     
     private func displayCorrectView(_ selectedOption: BrowseSection) -> some View {
