@@ -38,7 +38,7 @@ struct RoomSetsDetailsView: View {
                     Text(listItemModel.name.description)
                         .font(.body)
                         .fontWeight(.light)
-                        .foregroundColor(.black)
+//                        .foregroundColor(.black)
                         .padding(.horizontal)
                 }
             }

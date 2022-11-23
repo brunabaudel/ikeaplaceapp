@@ -13,19 +13,21 @@ struct ItemMainListView: View {
     var imageSize: CGFloat
     
     var body: some View {
-        VStack {
-            ZStack(alignment: .bottomLeading) {
-                Image(item.image)
-                    .resizable()
-                    .frame(width: imageSize, height: imageSize)
-                    .aspectRatio(contentMode: .fit)
-                    
-                Text(item.name.capitalized)
-                    .font(.title)
-                    .foregroundColor(.white)
-                    .fontWeight(.light)
-                    .padding(22)
-            }
+        ZStack(alignment: .bottomLeading) {
+            Image(item.image)
+                .resizable()
+                .frame(width: imageSize, height: imageSize)
+                .aspectRatio(contentMode: .fit)
+                .accessibilityElement(children: .ignore)
+//              .accessibilityLabel(item.imageDescription)
+                
+            Text(item.name.capitalized)
+                .font(.title)
+                .foregroundColor(.white)
+                .bold()
+                .fontWeight(.light)
+                .padding(22)
+                .accessibilityLabel("category \(item.name)")
         }
     }
 }

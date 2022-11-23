@@ -36,9 +36,10 @@ struct CategoryDetailsView: View {
                 CategoryGridView(items: listItemModel.items ?? [], imageSize: imageSize)
                     .padding(.horizontal, 16)
             }
+            
         }
         .navigationTitle("")
-        .accentColor(.black)
         .ignoresSafeArea()
+        .padding(.bottom, 2)
     }
 }

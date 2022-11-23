@@ -35,6 +35,7 @@ struct CategoryItemDetailsView: View {
                 }
             }
             .ignoresSafeArea()
+            .padding(.bottom, 2)
             
             ARButtonView(item: item)
                 .padding()

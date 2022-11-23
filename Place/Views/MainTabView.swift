@@ -15,25 +15,20 @@ struct MainTabView: View {
             BrowseView()
                 .tabItem {
                     Image(systemName: "square.grid.2x2")
+                        .accessibilityLabel("Browse categories and room sets")
                 }
-                .accessibilityElement()
-                .accessibilityLabel(Text("Browse tab"))
-
+                
             ARView()
                 .tabItem {
                     Image(systemName: "viewfinder")
+                        .accessibilityLabel("Scan furniture")
                 }
-                .accessibilityElement()
-                .accessibilityLabel(Text("Scan tab"))
-            
+                
             ProfileView()
                 .tabItem {
                     Image(systemName: "person")
+                        .accessibilityLabel("Profile")
                 }
-                .accessibilityElement()
-                .accessibilityLabel(Text("Profile tab"))
         }
-        .accessibilityElement()
-        .accessibilityLabel(Text(""))
     }
 }

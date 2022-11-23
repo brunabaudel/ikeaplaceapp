@@ -22,6 +22,7 @@ struct ListItemModel: Identifiable, Hashable {
     internal let id = UUID()
     var name: String
     var image: String
+    var imageDescription: String
     var items: [GridItemModel]?
     
     static func == (lhs: ListItemModel, rhs: ListItemModel) -> Bool {
@@ -50,34 +51,34 @@ struct GridItemModel: Identifiable {
 
 let categoryList: ListModel =
 ListModel(type: .categories, title: "Selected furniture",
-              items: [ListItemModel(name: "chairs", image: "chairs", items: categoriesItems),
-                      ListItemModel(name: "armchairs", image: "armchairs-chaise-longues", items: categoriesItems),
-                      ListItemModel(name: "bar", image: "bar-furniture", items: categoriesItems),
-                      ListItemModel(name: "beds", image: "beds", items: categoriesItems),
-                      ListItemModel(name: "bookcases shelving", image: "bookcases-shelving-units", items: categoriesItems),
-                      ListItemModel(name: "cabinets cupboards", image: "cabinets-cupboards", items: categoriesItems),
-                      ListItemModel(name: "cafe", image: "cafe-furniture", items: categoriesItems),
-                      ListItemModel(name: "drawers", image: "chests-of-drawers-drawer-units", items: categoriesItems),
-                      ListItemModel(name: "childrens", image: "childrens-furniture", items: categoriesItems),
-                      ListItemModel(name: "furniture sets", image: "furniture-sets", items: categoriesItems),
-                      ListItemModel(name: "gaming", image: "gaming-furniture", items: categoriesItems),
-                      ListItemModel(name: "nursery", image: "nursery-furniture", items: categoriesItems),
-                      ListItemModel(name: "outdoor", image: "outdoor-furniture", items: categoriesItems),
-                      ListItemModel(name: "room dividers", image: "room-dividers", items: categoriesItems),
-                      ListItemModel(name: "sideboards tables", image: "sideboards-buffets-console-tables", items: categoriesItems),
-                      ListItemModel(name: "sofas", image: "sofas", items: categoriesItems),
-                      ListItemModel(name: "tables desks", image: "tables-desks", items: categoriesItems),
-                      ListItemModel(name: "trolleys", image: "trolleys", items: categoriesItems),
-                      ListItemModel(name: "tv media", image: "tv-media-furniture", items: categoriesItems),
-                      ListItemModel(name: "wardrobes", image: "wardrobes", items: categoriesItems),
+          items: [ListItemModel(name: "chairs", image: "chairs", imageDescription: "simple chair in the middle", items: categoriesItems),
+                      ListItemModel(name: "armchairs", image: "armchairs-chaise-longues", imageDescription: "", items: categoriesItems),
+                      ListItemModel(name: "bar", image: "bar-furniture", imageDescription: "", items: categoriesItems),
+                      ListItemModel(name: "beds", image: "beds", imageDescription: "", items: categoriesItems),
+                      ListItemModel(name: "bookcases shelving", image: "bookcases-shelving-units", imageDescription: "", items: categoriesItems),
+                      ListItemModel(name: "cabinets cupboards", image: "cabinets-cupboards", imageDescription: "", items: categoriesItems),
+                      ListItemModel(name: "cafe", image: "cafe-furniture", imageDescription: "", items: categoriesItems),
+                      ListItemModel(name: "drawers", image: "chests-of-drawers-drawer-units", imageDescription: "", items: categoriesItems),
+                      ListItemModel(name: "children", image: "childrens-furniture", imageDescription: "", items: categoriesItems),
+                      ListItemModel(name: "furniture sets", image: "furniture-sets", imageDescription: "", items: categoriesItems),
+                      ListItemModel(name: "gaming", image: "gaming-furniture", imageDescription: "", items: categoriesItems),
+                      ListItemModel(name: "nursery", image: "nursery-furniture", imageDescription: "", items: categoriesItems),
+                      ListItemModel(name: "outdoor", image: "outdoor-furniture", imageDescription: "", items: categoriesItems),
+                      ListItemModel(name: "room dividers", image: "room-dividers", imageDescription: "", items: categoriesItems),
+                      ListItemModel(name: "sideboards tables", image: "sideboards-buffets-console-tables", imageDescription: "", items: categoriesItems),
+                      ListItemModel(name: "sofas", image: "sofas", imageDescription: "", items: categoriesItems),
+                      ListItemModel(name: "tables desks", image: "tables-desks", imageDescription: "", items: categoriesItems),
+                      ListItemModel(name: "trolleys", image: "trolleys", imageDescription: "", items: categoriesItems),
+                      ListItemModel(name: "tv media", image: "tv-media-furniture", imageDescription: "", items: categoriesItems),
+                      ListItemModel(name: "wardrobes", image: "wardrobes", imageDescription: "", items: categoriesItems),
                      ])
 
 let roomSetsList: ListModel =
 ListModel(type: .roomSets, title: "Experiences to try",
-          items: [ListItemModel(name: "A space to relax", image: "a-space-ro-relax", items: []),
-                  ListItemModel(name: "A space to relax", image: "a-space-ro-relax", items: []),
-                  ListItemModel(name: "A space to relax", image: "a-space-ro-relax", items: []),
-                  ListItemModel(name: "A space to relax", image: "a-space-ro-relax", items: [])
+          items: [ListItemModel(name: "A space to relax", image: "a-space-ro-relax", imageDescription: "", items: []),
+                  ListItemModel(name: "A space to relax", image: "a-space-ro-relax", imageDescription: "", items: []),
+                  ListItemModel(name: "A space to relax", image: "a-space-ro-relax", imageDescription: "", items: []),
+                  ListItemModel(name: "A space to relax", image: "a-space-ro-relax", imageDescription: "", items: [])
                  ])
 
 let suggestions: [GridItemModel] = [

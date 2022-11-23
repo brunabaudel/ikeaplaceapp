@@ -25,20 +25,23 @@ struct BrowseView: View {
                     .frame(maxWidth: .infinity, alignment: .leading)
                     .padding()
                     .padding(.top, 28)
-                    .accessibilityElement()
-                    .accessibilityLabel(Text("browse"))
+                    .accessibilityLabel("Welcome, Bruna! What are you looking for today?")
                 
-                Picker("", selection: $segmentationSelection) {
-                    ForEach(BrowseSection.allCases, id: \.self) { option in
-                        Text(option.rawValue)
-                            .fontWeight(.thin)
-                            .tag(option)
+                HStack {
+                    Picker("", selection: $segmentationSelection) {
+                        ForEach(BrowseSection.allCases, id: \.self) { option in
+                            Text(option.rawValue)
+                                .fontWeight(.thin)
+                                .tag(option)
+                                .accessibilityLabel("Browse \(option.rawValue)")
+                        }
                     }
+                    .pickerStyle(.segmented)
+                    .fixedSize(horizontal: true, vertical: false)
+                    .padding(0)
+                    
                     Spacer()
                 }
-                .pickerStyle(.segmented)
-                .fixedSize(horizontal: true, vertical: false)
-                .padding(0)
                 
                 Divider()
                     .padding(0)
@@ -49,7 +52,6 @@ struct BrowseView: View {
         }
         .tint(.white)
         .edgesIgnoringSafeArea(.all)
-        .accessibilityElement()
     }
     
     private func displayCorrectView(_ selectedOption: BrowseSection) -> some View {

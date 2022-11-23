@@ -28,7 +28,7 @@ extension BrowseView {
         let titleFont = UIFont.preferredFont(forTextStyle: UIFont.TextStyle.title2)
 
         UISegmentedControl.appearance().setTitleTextAttributes([NSAttributedString.Key.font: titleFont, NSAttributedString.Key.foregroundColor: UIColor.systemBlue, NSAttributedString.Key.paragraphStyle: titleParagraphStyle], for:.selected)
-        UISegmentedControl.appearance().setTitleTextAttributes([NSAttributedString.Key.font: titleFont, NSAttributedString.Key.foregroundColor: UIColor.systemCyan, NSAttributedString.Key.paragraphStyle: titleParagraphStyle], for:.normal)
+        UISegmentedControl.appearance().setTitleTextAttributes([NSAttributedString.Key.font: titleFont, NSAttributedString.Key.foregroundColor: UIColor.lightGray, NSAttributedString.Key.paragraphStyle: titleParagraphStyle], for:.normal)
         
         UISegmentedControl.appearance().setBackgroundImage(imageWithColor(.clear), for: .normal, barMetrics: .default)
         

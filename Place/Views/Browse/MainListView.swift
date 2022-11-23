@@ -12,6 +12,7 @@ struct MainListView: View {
     var listModel: ListModel
     @State private var active: Bool = false
     @State var id = 0
+    @State var isVoiceOverPressed = false
     
     var body: some View {
         GeometryReader { geo in
@@ -29,7 +30,7 @@ struct MainListView: View {
                         ScrollViewReader { reader in
                             ForEach(Array(listModel.items.enumerated()), id: \.element) { index, element in
                                 NavigationLink(destination: destination(element: element, imageSize: geo.size.width)) {
-                                    ItemMainListView(item: element, imageSize: geo.size.width - 42)
+                                    ItemMainListView(item: element, imageSize: geo.size.width - 32)
                                         .id(index)
                                 }
                             }
@@ -43,7 +44,7 @@ struct MainListView: View {
                                             reader.scrollTo(id, anchor: .top)
                                         }
                                     }
-                                } else if edge == . top {
+                                } else if edge == .top {
                                     if (id > 0) {
                                         id -= 1
                                         withAnimation(.easeInOut) {
@@ -57,8 +58,6 @@ struct MainListView: View {
                 }
             }
         }
-        .accessibilityElement()
-        .accessibilityLabel(Text("You can browse the categories here"))
     }
     
     func destination(element: ListItemModel, imageSize: CGFloat) -> AnyView {

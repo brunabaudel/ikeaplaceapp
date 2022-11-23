@@ -23,13 +23,13 @@ struct CategoryItemGridView: View {
                 .font(.body)
                 .bold()
                 .fontWeight(.light)
-                .foregroundColor(.black)
+//                .foregroundColor(.black)
                 .padding(.bottom, 0.5)
             
             Text(item.description.lowercased())
                 .font(.footnote)
                 .fontWeight(.light)
-                .foregroundColor(.black)
+//                .foregroundColor(.black)
                 .padding(0)
 
             Text(item.formatPrice)
