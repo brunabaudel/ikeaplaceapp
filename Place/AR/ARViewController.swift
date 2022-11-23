@@ -11,7 +11,11 @@ import UIKit
 import SwiftUI
 
 class ARViewController: UIViewController {
-        
+
+    // MARK: Obejct
+    
+    var object: GridItemModel!
+    
     // MARK: IBOutlets
     
     var sceneView: VirtualObjectARView!
@@ -149,6 +153,13 @@ class ARViewController: UIViewController {
 
 
 struct UICamViewController: UIViewControllerRepresentable {
+    var object: GridItemModel
+    
     func updateUIViewController(_ uiViewController: UIViewControllerType, context: Context) {}
-    func makeUIViewController(context: Context) -> some UIViewController { return ARViewController() }
+    
+    func makeUIViewController(context: Context) -> some UIViewController {
+        let vc = ARViewController()
+        vc.object = object
+        return vc
+    }
 }

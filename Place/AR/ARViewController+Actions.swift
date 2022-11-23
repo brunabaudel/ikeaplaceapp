@@ -20,7 +20,7 @@ extension ARViewController: UIGestureRecognizerDelegate {
     // MARK: - Interface Actions
     
     @objc func addButtonAction(_ sender: UIButton) {
-        guard let vo = VirtualObject.availableObject(name: "lamp") else {return}
+        guard let vo = VirtualObject.availableObject(name: self.object.modelName) else {return}
         
         if let query = sceneView.getRaycastQuery(for: vo.allowedAlignment),
             let result = sceneView.castRay(for: query).first {

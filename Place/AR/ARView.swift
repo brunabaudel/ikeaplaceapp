@@ -16,7 +16,7 @@ struct ARView: View {
         ZStack(alignment: .topTrailing) {
             Color.primary.edgesIgnoringSafeArea(.all)
             
-            UICamViewController()
+            UICamViewController(object: item!)
 
             HStack {
                 VStack(alignment: .leading) {
