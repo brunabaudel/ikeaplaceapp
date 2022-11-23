@@ -11,6 +11,7 @@ struct MainListView: View {
     
     var listModel: ListModel
     @State private var active: Bool = false
+    @State var id = 0
     
     var body: some View {
         GeometryReader { geo in
@@ -25,6 +26,7 @@ struct MainListView: View {
                         .padding(.horizontal, 22)
                     
                     VStack {
+                        ScrollViewReader { reader in
                             ForEach(Array(listModel.items.enumerated()), id: \.element) { index, element in
                                 NavigationLink(destination: destination(element: element, imageSize: geo.size.width)) {
                                     ItemMainListView(item: element, imageSize: geo.size.width - 42)
@@ -32,6 +34,24 @@ struct MainListView: View {
                                 }
                             }
                             .padding(8)
+                            .accessibilityScrollAction({ edge in
+                                print(edge)
+                                if edge == .bottom {
+                                    if (id < listModel.items.count-1) {
+                                        id += 1
+                                        withAnimation(.easeInOut) {
+                                            reader.scrollTo(id, anchor: .top)
+                                        }
+                                    }
+                                } else if edge == . top {
+                                    if (id > 0) {
+                                        id -= 1
+                                        withAnimation(.easeInOut) {
+                                            reader.scrollTo(id, anchor: .top)
+                                        }
+                                    }
+                                }
+                            })
                         }
                     }
                 }
