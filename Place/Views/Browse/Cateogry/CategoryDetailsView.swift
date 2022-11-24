@@ -18,6 +18,7 @@ struct CategoryDetailsView: View {
                     .resizable()
                     .frame(width: imageSize, height: imageSize)
                     .aspectRatio(contentMode: .fit)
+                    .accessibilityElement(children: .ignore)
 
                 Text("feature".uppercased())
                     .foregroundColor(.gray)
